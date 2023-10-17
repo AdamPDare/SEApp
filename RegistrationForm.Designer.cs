@@ -36,6 +36,12 @@
             this.lastNameTextbox = new System.Windows.Forms.TextBox();
             this.companyRoleCombobox = new System.Windows.Forms.ComboBox();
             this.registerAccountButton = new System.Windows.Forms.Button();
+            this.usernameLabel2 = new System.Windows.Forms.Label();
+            this.passwordLabel2 = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.lastNameLabel = new System.Windows.Forms.Label();
+            this.companyRoleLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.citisoftPicturebox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +80,7 @@
             // firstNameTextbox
             // 
             this.firstNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstNameTextbox.Location = new System.Drawing.Point(135, 500);
+            this.firstNameTextbox.Location = new System.Drawing.Point(135, 499);
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.Size = new System.Drawing.Size(246, 30);
             this.firstNameTextbox.TabIndex = 4;
@@ -109,12 +115,78 @@
             this.registerAccountButton.Text = "Register";
             this.registerAccountButton.UseVisualStyleBackColor = true;
             // 
+            // usernameLabel2
+            // 
+            this.usernameLabel2.AutoSize = true;
+            this.usernameLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel2.Location = new System.Drawing.Point(130, 250);
+            this.usernameLabel2.Name = "usernameLabel2";
+            this.usernameLabel2.Size = new System.Drawing.Size(102, 25);
+            this.usernameLabel2.TabIndex = 8;
+            this.usernameLabel2.Text = "Username";
+            // 
+            // passwordLabel2
+            // 
+            this.passwordLabel2.AutoSize = true;
+            this.passwordLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel2.Location = new System.Drawing.Point(130, 327);
+            this.passwordLabel2.Name = "passwordLabel2";
+            this.passwordLabel2.Size = new System.Drawing.Size(98, 25);
+            this.passwordLabel2.TabIndex = 9;
+            this.passwordLabel2.Text = "Password";
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabel.Location = new System.Drawing.Point(130, 401);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(150, 25);
+            this.emailLabel.TabIndex = 10;
+            this.emailLabel.Text = "Company Email";
+            // 
+            // firstNameLabel
+            // 
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameLabel.Location = new System.Drawing.Point(130, 471);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(106, 25);
+            this.firstNameLabel.TabIndex = 11;
+            this.firstNameLabel.Text = "First Name";
+            // 
+            // lastNameLabel
+            // 
+            this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNameLabel.Location = new System.Drawing.Point(130, 536);
+            this.lastNameLabel.Name = "lastNameLabel";
+            this.lastNameLabel.Size = new System.Drawing.Size(106, 25);
+            this.lastNameLabel.TabIndex = 12;
+            this.lastNameLabel.Text = "Last Name";
+            // 
+            // companyRoleLabel
+            // 
+            this.companyRoleLabel.AutoSize = true;
+            this.companyRoleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.companyRoleLabel.Location = new System.Drawing.Point(130, 613);
+            this.companyRoleLabel.Name = "companyRoleLabel";
+            this.companyRoleLabel.Size = new System.Drawing.Size(141, 25);
+            this.companyRoleLabel.TabIndex = 13;
+            this.companyRoleLabel.Text = "Company Role";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(528, 968);
+            this.Controls.Add(this.companyRoleLabel);
+            this.Controls.Add(this.lastNameLabel);
+            this.Controls.Add(this.firstNameLabel);
+            this.Controls.Add(this.emailLabel);
+            this.Controls.Add(this.passwordLabel2);
+            this.Controls.Add(this.usernameLabel2);
             this.Controls.Add(this.registerAccountButton);
             this.Controls.Add(this.companyRoleCombobox);
             this.Controls.Add(this.lastNameTextbox);
@@ -141,5 +213,11 @@
         private System.Windows.Forms.TextBox lastNameTextbox;
         private System.Windows.Forms.ComboBox companyRoleCombobox;
         private System.Windows.Forms.Button registerAccountButton;
+        private System.Windows.Forms.Label usernameLabel2;
+        private System.Windows.Forms.Label passwordLabel2;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.Label firstNameLabel;
+        private System.Windows.Forms.Label lastNameLabel;
+        private System.Windows.Forms.Label companyRoleLabel;
     }
 }
