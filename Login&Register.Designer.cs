@@ -35,6 +35,8 @@
             this.registerButton = new System.Windows.Forms.Button();
             this.loginUserPicturebox = new System.Windows.Forms.PictureBox();
             this.loginPasswordPicturebox = new System.Windows.Forms.PictureBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CitisoftLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginUserPicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginPasswordPicturebox)).BeginInit();
@@ -55,7 +57,6 @@
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.Size = new System.Drawing.Size(246, 30);
             this.usernameTextbox.TabIndex = 1;
-            this.usernameTextbox.Text = "Username";
             this.usernameTextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // passwordTextbox
@@ -65,7 +66,6 @@
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.Size = new System.Drawing.Size(246, 30);
             this.passwordTextbox.TabIndex = 2;
-            this.passwordTextbox.Text = "Password";
             // 
             // loginButton
             // 
@@ -79,13 +79,15 @@
             // 
             // registerButton
             // 
+            this.registerButton.BackColor = System.Drawing.Color.Snow;
             this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerButton.Location = new System.Drawing.Point(88, 699);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(113, 52);
             this.registerButton.TabIndex = 4;
             this.registerButton.Text = "Register";
-            this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.UseVisualStyleBackColor = false;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // loginUserPicturebox
             // 
@@ -94,6 +96,7 @@
             this.loginUserPicturebox.Size = new System.Drawing.Size(52, 29);
             this.loginUserPicturebox.TabIndex = 5;
             this.loginUserPicturebox.TabStop = false;
+            this.loginUserPicturebox.Click += new System.EventHandler(this.loginUserPicturebox_Click);
             // 
             // loginPasswordPicturebox
             // 
@@ -103,12 +106,34 @@
             this.loginPasswordPicturebox.TabIndex = 6;
             this.loginPasswordPicturebox.TabStop = false;
             // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.Location = new System.Drawing.Point(136, 400);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(102, 25);
+            this.usernameLabel.TabIndex = 7;
+            this.usernameLabel.Text = "Username";
+            // 
+            // passwordLabel
+            // 
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.Location = new System.Drawing.Point(136, 494);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(98, 25);
+            this.passwordLabel.TabIndex = 8;
+            this.passwordLabel.Text = "Password";
+            // 
             // Login_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(528, 968);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.loginPasswordPicturebox);
             this.Controls.Add(this.loginUserPicturebox);
             this.Controls.Add(this.registerButton);
@@ -135,5 +160,7 @@
         private System.Windows.Forms.Button registerButton;
         private System.Windows.Forms.PictureBox loginUserPicturebox;
         private System.Windows.Forms.PictureBox loginPasswordPicturebox;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label passwordLabel;
     }
 }

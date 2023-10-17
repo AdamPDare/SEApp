@@ -21,5 +21,17 @@ namespace CitisoftVendorAssignment
         {
 
         }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrationForm popups = new RegistrationForm();
+            DialogResult dialog = popups.ShowDialog();
+        }
+
+        private void loginUserPicturebox_Click(object sender, EventArgs e)
+        {
+            loginUserPicturebox.Image = Image.FromFile(@"userIcon.png");
+        }
     }
 }
