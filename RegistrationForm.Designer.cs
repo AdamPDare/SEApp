@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.citisoftPicturebox2 = new System.Windows.Forms.PictureBox();
-            this.usernameTextbox2 = new System.Windows.Forms.TextBox();
-            this.passwordTextbox2 = new System.Windows.Forms.TextBox();
-            this.emailTextbox = new System.Windows.Forms.TextBox();
-            this.firstNameTextbox = new System.Windows.Forms.TextBox();
-            this.lastNameTextbox = new System.Windows.Forms.TextBox();
-            this.companyRoleCombobox = new System.Windows.Forms.ComboBox();
+            this.usernametxt = new System.Windows.Forms.TextBox();
+            this.passwordtxt = new System.Windows.Forms.TextBox();
+            this.emailtxt = new System.Windows.Forms.TextBox();
+            this.firstNametxt = new System.Windows.Forms.TextBox();
+            this.lastNametxt = new System.Windows.Forms.TextBox();
+            this.companyRolecmb = new System.Windows.Forms.ComboBox();
             this.registerAccountButton = new System.Windows.Forms.Button();
             this.usernameLabel2 = new System.Windows.Forms.Label();
             this.passwordLabel2 = new System.Windows.Forms.Label();
@@ -42,6 +42,8 @@
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.companyRoleLabel = new System.Windows.Forms.Label();
+            this.agetxt = new System.Windows.Forms.TextBox();
+            this.ageLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.citisoftPicturebox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,62 +55,63 @@
             this.citisoftPicturebox2.TabIndex = 0;
             this.citisoftPicturebox2.TabStop = false;
             // 
-            // usernameTextbox2
+            // usernametxt
             // 
-            this.usernameTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextbox2.Location = new System.Drawing.Point(135, 278);
-            this.usernameTextbox2.Name = "usernameTextbox2";
-            this.usernameTextbox2.Size = new System.Drawing.Size(246, 30);
-            this.usernameTextbox2.TabIndex = 1;
+            this.usernametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernametxt.Location = new System.Drawing.Point(135, 278);
+            this.usernametxt.Name = "usernametxt";
+            this.usernametxt.Size = new System.Drawing.Size(246, 30);
+            this.usernametxt.TabIndex = 1;
             // 
-            // passwordTextbox2
+            // passwordtxt
             // 
-            this.passwordTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextbox2.Location = new System.Drawing.Point(135, 355);
-            this.passwordTextbox2.Name = "passwordTextbox2";
-            this.passwordTextbox2.Size = new System.Drawing.Size(246, 30);
-            this.passwordTextbox2.TabIndex = 2;
+            this.passwordtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordtxt.Location = new System.Drawing.Point(135, 355);
+            this.passwordtxt.Name = "passwordtxt";
+            this.passwordtxt.PasswordChar = '*';
+            this.passwordtxt.Size = new System.Drawing.Size(246, 30);
+            this.passwordtxt.TabIndex = 2;
             // 
-            // emailTextbox
+            // emailtxt
             // 
-            this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextbox.Location = new System.Drawing.Point(135, 429);
-            this.emailTextbox.Name = "emailTextbox";
-            this.emailTextbox.Size = new System.Drawing.Size(246, 30);
-            this.emailTextbox.TabIndex = 3;
+            this.emailtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailtxt.Location = new System.Drawing.Point(135, 429);
+            this.emailtxt.Name = "emailtxt";
+            this.emailtxt.Size = new System.Drawing.Size(246, 30);
+            this.emailtxt.TabIndex = 3;
             // 
-            // firstNameTextbox
+            // firstNametxt
             // 
-            this.firstNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstNameTextbox.Location = new System.Drawing.Point(135, 499);
-            this.firstNameTextbox.Name = "firstNameTextbox";
-            this.firstNameTextbox.Size = new System.Drawing.Size(246, 30);
-            this.firstNameTextbox.TabIndex = 4;
+            this.firstNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNametxt.Location = new System.Drawing.Point(135, 499);
+            this.firstNametxt.Name = "firstNametxt";
+            this.firstNametxt.Size = new System.Drawing.Size(246, 30);
+            this.firstNametxt.TabIndex = 4;
             // 
-            // lastNameTextbox
+            // lastNametxt
             // 
-            this.lastNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastNameTextbox.Location = new System.Drawing.Point(135, 564);
-            this.lastNameTextbox.Name = "lastNameTextbox";
-            this.lastNameTextbox.Size = new System.Drawing.Size(246, 30);
-            this.lastNameTextbox.TabIndex = 5;
+            this.lastNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastNametxt.Location = new System.Drawing.Point(135, 564);
+            this.lastNametxt.Name = "lastNametxt";
+            this.lastNametxt.Size = new System.Drawing.Size(246, 30);
+            this.lastNametxt.TabIndex = 5;
             // 
-            // companyRoleCombobox
+            // companyRolecmb
             // 
-            this.companyRoleCombobox.FormattingEnabled = true;
-            this.companyRoleCombobox.Items.AddRange(new object[] {
+            this.companyRolecmb.FormattingEnabled = true;
+            this.companyRolecmb.Items.AddRange(new object[] {
             "Owner",
             "Admin",
             "Financial Advisor"});
-            this.companyRoleCombobox.Location = new System.Drawing.Point(135, 641);
-            this.companyRoleCombobox.Name = "companyRoleCombobox";
-            this.companyRoleCombobox.Size = new System.Drawing.Size(246, 28);
-            this.companyRoleCombobox.TabIndex = 6;
+            this.companyRolecmb.Location = new System.Drawing.Point(135, 641);
+            this.companyRolecmb.Name = "companyRolecmb";
+            this.companyRolecmb.Size = new System.Drawing.Size(246, 28);
+            this.companyRolecmb.TabIndex = 6;
             // 
             // registerAccountButton
             // 
             this.registerAccountButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerAccountButton.Location = new System.Drawing.Point(268, 720);
+            this.registerAccountButton.Location = new System.Drawing.Point(268, 778);
             this.registerAccountButton.Name = "registerAccountButton";
             this.registerAccountButton.Size = new System.Drawing.Size(113, 52);
             this.registerAccountButton.TabIndex = 7;
@@ -175,12 +178,32 @@
             this.companyRoleLabel.TabIndex = 13;
             this.companyRoleLabel.Text = "Company Role";
             // 
+            // agetxt
+            // 
+            this.agetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agetxt.Location = new System.Drawing.Point(135, 717);
+            this.agetxt.Name = "agetxt";
+            this.agetxt.Size = new System.Drawing.Size(246, 30);
+            this.agetxt.TabIndex = 14;
+            // 
+            // ageLabel
+            // 
+            this.ageLabel.AutoSize = true;
+            this.ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageLabel.Location = new System.Drawing.Point(130, 689);
+            this.ageLabel.Name = "ageLabel";
+            this.ageLabel.Size = new System.Drawing.Size(48, 25);
+            this.ageLabel.TabIndex = 15;
+            this.ageLabel.Text = "Age";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(528, 968);
+            this.Controls.Add(this.ageLabel);
+            this.Controls.Add(this.agetxt);
             this.Controls.Add(this.companyRoleLabel);
             this.Controls.Add(this.lastNameLabel);
             this.Controls.Add(this.firstNameLabel);
@@ -188,12 +211,12 @@
             this.Controls.Add(this.passwordLabel2);
             this.Controls.Add(this.usernameLabel2);
             this.Controls.Add(this.registerAccountButton);
-            this.Controls.Add(this.companyRoleCombobox);
-            this.Controls.Add(this.lastNameTextbox);
-            this.Controls.Add(this.firstNameTextbox);
-            this.Controls.Add(this.emailTextbox);
-            this.Controls.Add(this.passwordTextbox2);
-            this.Controls.Add(this.usernameTextbox2);
+            this.Controls.Add(this.companyRolecmb);
+            this.Controls.Add(this.lastNametxt);
+            this.Controls.Add(this.firstNametxt);
+            this.Controls.Add(this.emailtxt);
+            this.Controls.Add(this.passwordtxt);
+            this.Controls.Add(this.usernametxt);
             this.Controls.Add(this.citisoftPicturebox2);
             this.Name = "RegistrationForm";
             this.Text = "RegistrationForm";
@@ -206,12 +229,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox citisoftPicturebox2;
-        private System.Windows.Forms.TextBox usernameTextbox2;
-        private System.Windows.Forms.TextBox passwordTextbox2;
-        private System.Windows.Forms.TextBox emailTextbox;
-        private System.Windows.Forms.TextBox firstNameTextbox;
-        private System.Windows.Forms.TextBox lastNameTextbox;
-        private System.Windows.Forms.ComboBox companyRoleCombobox;
+        private System.Windows.Forms.TextBox usernametxt;
+        private System.Windows.Forms.TextBox passwordtxt;
+        private System.Windows.Forms.TextBox emailtxt;
+        private System.Windows.Forms.TextBox firstNametxt;
+        private System.Windows.Forms.TextBox lastNametxt;
+        private System.Windows.Forms.ComboBox companyRolecmb;
         private System.Windows.Forms.Button registerAccountButton;
         private System.Windows.Forms.Label usernameLabel2;
         private System.Windows.Forms.Label passwordLabel2;
@@ -219,5 +242,7 @@
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.Label lastNameLabel;
         private System.Windows.Forms.Label companyRoleLabel;
+        private System.Windows.Forms.TextBox agetxt;
+        private System.Windows.Forms.Label ageLabel;
     }
 }
